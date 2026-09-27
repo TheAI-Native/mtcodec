@@ -1,0 +1,164 @@
+DCC003-1.0 - METHOD SPECIFICATION
+25 September 2026
+
+Purpose and boundary
+--------------------
+This package validates a competing context-clustering implementation under
+common DCC002 coding/serialization. Its candidate-size records can support
+later analysis; incidental process duration is not codec throughput. No held-out
+Silesia evaluation or tuning is performed here. It does not update the paper.
+
+Unchanged coder
+---------------
+source/mtcodec_dcc002.c is the 88,724-byte completed DCC002 source, SHA-256:
+d255620ecedecad23e8beb98bb7fe68d5aaa97a08fc21b33da046d4c1b949aa8
+It is included with a renamed main, not rewritten. Existing code-length
+construction, 4096-total rANS normalization, 1/256-bit assignment costs,
+serialization, and decoders remain unchanged. The frozen original is copied
+from the user's study into the run and compiled separately for cross-checks.
+New code enters the Huffman/rANS encoders ONLY via supplied context maps.
+
+Context / candidate set
+-----------------------
+Contexts are the previous byte, with initial context zero. Active contexts are
+fed to histogram-clustering in ascending byte-value order; inactive context IDs
+are mapped to zero in the serialized 256-entry map. Empty input is special:
+one empty table and zero map, checked as a codec-body edge case, not a corpus
+rate. We evaluate caps 1,2,3,4,6,8,12,16,24,32,48,64. A cap is NOT a promise of
+exactly that many realized tables. Final IDs are dense.
+
+Three generators, each evaluated with both coders
+-------------------------------------------------
+reassignment:
+  Uses DCC002's unchanged frequency-ordered, round-robin initialization and
+  bounded update/reassignment loop. Forced-count and selected outputs are
+  compared byte-for-byte to the separately compiled frozen original.
+
+brotli_native_policy:
+  Literal-only extraction of Brotli v1.1.0 histogram clustering; uses the native
+  population-cost estimator and 0.5*ClusterCostDiff map-size surrogate.
+  Native partitions are independent of downstream Huffman/rANS choice and that
+  property is tested at each cap. The rANS downstream case does NOT imply
+  native Brotli uses this rANS implementation. This is not whole-compressor
+  Brotli and does not use Brotli's native literal context function or stream.
+
+matched_merge:
+  Instantiates the SAME cluster_inc.h search/remap/reindex template but replaces
+  its population cost with the appropriate DCC002 table model cost and sets
+  ClusterCostDiff to zero. Search structure, pair ordering, bounded pair queue,
+  first-stage batches of 64 histograms, subsequent merging, remapping and
+  reindexing are unchanged from the extracted template.
+  The Huffman table cost is exact own-table RLE header bits + sum(count*length).
+  The rANS table cost is exact own frequency-header bits + normalized-frequency
+  payload estimate, computed using the existing 1/256-bit cost table.
+  No finite-state rANS byte count is substituted into the internal merge cost.
+  Brotli's entropy-coded-map surrogate is removed because this experiment's
+  map is fixed-width. Its actual map cost is charged by the outer selector.
+  Map width/alignment/state are not charged once per cluster or counted twice.
+
+Outer selection and accounting
+------------------------------
+Huffman chooses the candidate with the smallest exact unpadded body bit count;
+byte padding is monotone and does not invalidate that minimum. rANS chooses
+actual body bytes from a complete candidate encoding. Strict improvement only:
+ties retain the first candidate in the listed cap order, not necessarily the
+fewest realized tables. All bodies include the count field, context map when
+needed, table headers, padding, payload and rANS terminal state. They exclude
+the common outer file container and stored fallback. The three methods must
+have the same one-table byte count. Every selected output must satisfy that
+one-table bound. None is required to beat another generator to pass.
+
+For validation, ALL Huffman candidates are actually emitted, and every map and
+stream is regenerated twice. Do not interpret that deliberate validation work
+as an efficient production encoder timing. Future timing must separate model
+search/emission from repeated validation. No equal search-time budget is claimed.
+The input's collected bigrams are shared by the generators in the validation
+process. Production timing must explicitly include statistics construction.
+
+Reference pin / provenance / independent check
+----------------------------------------------
+Pinned historical release: Brotli v1.1.0, commit
+ed738e842d2fbdf2d6459e39267a633c4a9b2f5d
+This pin is not a claim to be the newest release.
+The browser-accessible official source was used to transcribe the three small
+upstream templates under vendor/brotli-v1.1.0, with LF endings and retained MIT
+notices. Direct archive retrieval was unavailable in this environment. Therefore
+no claim is made that those local byte hashes were verified against a fetched
+git archive. The literal-only wrapper extracts helper/math/memory definitions;
+it is not the full upstream encoder build. All local file hashes and primary
+source URLs are recorded in protocol/brotli-provenance.json.
+
+To avoid circularly validating the adapter against itself, 144 expected maps
+were generated by a separate helper linked to installed Debian libbrotli-dev
+1.1.0-2+b7's actual libbrotlienc.a/libbrotlicommon.a. The reported encoder version
+is 0x01001000. The 256-entry short-log table was compared to the library's table
+and matches exactly. Twelve deterministic histogram fixtures exercise duplicate,
+empty, skewed, sparse, multi-batch and cap-boundary situations at twelve caps.
+The package-native adapter matches all those actual-library expected maps.
+The Windows runner checks the same exact 144 vectors. This is tested equivalence
+on those fixtures, not a proof for all histograms or platforms.
+The native policy retains stdlib log2 for counts >=256. Near-tie behavior on
+real data may depend on floating point / math library. All local resulting maps
+are retained. The wrapper has not been run on the user's Windows environment
+before delivery. MSVC /fp:precise is recorded explicitly.
+
+Cost and boundary unit tests
+----------------------------
+26 checks validate hand-computable empty/singleton/two-symbol model costs,
+invalid coder/generator/map/cap/input specifications, the 512 MiB adapter guard,
+and merging identical distributions versus a disjoint one under two-table caps.
+One-table merging is checked for both matched coder policies. Input guards are
+specific to this experiment; they are not a review of every original API.
+The 512 MiB limit keeps uint32 histogram additions within a conservative range.
+The source includes inherited static scratch/cost state and is single-process,
+single-worker rather than a new thread-safe library.
+
+39-input positive matrix
+------------------------
+For each of 10 synthetic + 18 Calgary + 11 Canterbury entries:
+  3 generators x 2 coders x 12 caps = 72 candidate rows.
+  3 generators x 2 coders = 6 selected rows.
+Every candidate records repeat-map/repeat-stream equality, new/original decoder
+checks, exact body accounting, realized count and all 256 map entries.
+The reassignment cases additionally compare bytes to the frozen original.
+Selected reassignment bodies are likewise compared to the original selector.
+Expected totals are 2,808 candidate rows, 234 selected rows and 1,014 frozen-
+original byte comparisons. These are overlapping checks, not independent input
+samples. All 58 historical clustered byte sizes and 58 realized counts are
+compared to the previously audited CSVs; this does not remeasure all five older
+static variants because those are unchanged and passed the prior milestones.
+The pic/ptt5 duplicate is retained within each conventional corpus. No pooled
+statistical independence is implied. The same audited Cal/Can inputs are used;
+canonical-download provenance limitations from the earlier audit remain.
+
+Failure handling
+----------------
+Three expected negative controls: injected stream mismatch (exit 4), injected
+reference-vector mismatch (exit 4), and missing input (exit 2). A required positive
+failure stops the run and is preserved, not omitted to produce a favorable
+summary. Partial evidence is zipped when possible. A competitive loss is not a
+failure. Raw candidate and selected records retain all outcomes.
+
+Windows operation / no installation
+----------------------------------
+START-DCC003.cmd initializes installed VsDevCmd.bat with -arch=amd64 and
+-host_arch=amd64 in a process-local environment and invokes RUN-DCC003.txt once.
+No external downloads, PowerShell policy bypass, administrator rights or power
+changes are requested. The response files put every option on one line, including
+/link /MACHINE:X64, correcting the DCC002 warning. Output is captured with
+System.Diagnostics.Process, separate asynchronously drained stdout/stderr and
+native exit codes, avoiding PowerShell native-stderr formatting errors.
+Sources and expected inputs are hash-checked, and generated Windows EXE headers
+must be AMD64/PE32+. Protected study files and corpus inputs are checked again.
+All builds/logs/records are new; src/mtcodec_experiment.c is NOT replaced.
+
+Primary references
+------------------
+https://github.com/google/brotli/releases/tag/v1.1.0
+https://github.com/google/brotli/commit/ed738e842d2fbdf2d6459e39267a633c4a9b2f5d
+https://raw.githubusercontent.com/google/brotli/ed738e842d2fbdf2d6459e39267a633c4a9b2f5d/c/enc/cluster_inc.h
+https://raw.githubusercontent.com/google/brotli/ed738e842d2fbdf2d6459e39267a633c4a9b2f5d/c/enc/cluster.c
+https://raw.githubusercontent.com/google/brotli/ed738e842d2fbdf2d6459e39267a633c4a9b2f5d/c/enc/bit_cost_inc.h
+https://raw.githubusercontent.com/google/brotli/ed738e842d2fbdf2d6459e39267a633c4a9b2f5d/c/enc/fast_log.c
+https://learn.microsoft.com/en-us/cpp/build/reference/cl-command-files?view=msvc-170
+https://learn.microsoft.com/en-us/visualstudio/ide/reference/command-prompt-powershell?view=vs-2022

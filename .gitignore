@@ -1,0 +1,17 @@
+# Corpus bytes remain local; only the data guide is tracked.
+/data/*
+!/data/README.md
+/build/
+/reproduction-output/
+/release-assets/
+/evidence/
+/paper/*.docx
+/paper/*.pdf
+__pycache__/
+*.pyc
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.lib
+*.exp

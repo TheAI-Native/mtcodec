@@ -1,0 +1,59 @@
+{
+  "reference_release": "Brotli v1.1.0 (a deliberate pinned historical release, not a claim to be latest)",
+  "reference_commit": "ed738e842d2fbdf2d6459e39267a633c4a9b2f5d",
+  "release_url": "https://github.com/google/brotli/releases/tag/v1.1.0",
+  "template_files": [
+    {
+      "packaged_path": "vendor/brotli-v1.1.0/LICENSE",
+      "upstream_path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/google/brotli/ed738e842d2fbdf2d6459e39267a633c4a9b2f5d/LICENSE",
+      "sha256_of_packaged_bytes": "ee828c7c12f822dba3b16596d609920fe7c449d179e645bcf1e75cf0927f14bf",
+      "retrieval": "Transcribed from primary-source browser text with LF line endings; not fetched as a git archive."
+    },
+    {
+      "packaged_path": "vendor/brotli-v1.1.0/bit_cost_inc.h",
+      "upstream_path": "c/enc/bit_cost_inc.h",
+      "source_url": "https://raw.githubusercontent.com/google/brotli/ed738e842d2fbdf2d6459e39267a633c4a9b2f5d/c/enc/bit_cost_inc.h",
+      "sha256_of_packaged_bytes": "ae2e670d664dc13a75a3a7dad28e6cf372918de57d6e3f3f269480d0522adb1d",
+      "retrieval": "Transcribed from primary-source browser text with LF line endings; not fetched as a git archive."
+    },
+    {
+      "packaged_path": "vendor/brotli-v1.1.0/cluster_inc.h",
+      "upstream_path": "c/enc/cluster_inc.h",
+      "source_url": "https://raw.githubusercontent.com/google/brotli/ed738e842d2fbdf2d6459e39267a633c4a9b2f5d/c/enc/cluster_inc.h",
+      "sha256_of_packaged_bytes": "d6af6744dcdb7110e214289edb5c7418a29b4393a5b92cd0f94cc73e9cf6e2d5",
+      "retrieval": "Transcribed from primary-source browser text with LF line endings; not fetched as a git archive."
+    },
+    {
+      "packaged_path": "vendor/brotli-v1.1.0/histogram_inc.h",
+      "upstream_path": "c/enc/histogram_inc.h",
+      "source_url": "https://raw.githubusercontent.com/google/brotli/ed738e842d2fbdf2d6459e39267a633c4a9b2f5d/c/enc/histogram_inc.h",
+      "sha256_of_packaged_bytes": "9399d7252566bce150ebe38e3c4fcc79e2d1b7e79e3fa09748c9ae60972751a8",
+      "retrieval": "Transcribed from primary-source browser text with LF line endings; not fetched as a git archive."
+    }
+  ],
+  "adaptation": "Literal-only portability/memory/math wrapper in source/brotli_support.h and policy instances in source/cluster_policy.c; native policy keeps population cost and ClusterCostDiff; matched variants change these two cost functions only. Unmodified search template instantiated for all policies.",
+  "independent_oracle": {
+    "provider": "Debian libbrotli-dev:amd64 1.1.0-2+b7",
+    "reported_encoder_version_hex": "0x01001000",
+    "libraries": [
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/libbrotlienc.a",
+        "bytes": 746294,
+        "sha256": "79e8b3be6bdb9bd71301fa78fd8fac4b559a2aa5814fab7e6561e5d816f67fe1"
+      },
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/libbrotlicommon.a",
+        "bytes": 136864,
+        "sha256": "2b047a7c0559b19a0a86b349bd54a92517bc4763920577a2917bccba585085dc"
+      }
+    ],
+    "vectors": 144,
+    "small_log_table_entries_compared": 256,
+    "result": "All exact comparisons pass on executed fixtures. This is not a proof of full behavioral equivalence.",
+    "source": "evidence/generate-independent-oracle.c",
+    "vectors_sha256": "0fd6495fe9da915925fa169481dc05d4a5f9a361a4a3c8de6d81e4ee175723de"
+  },
+  "floating_point_note": "Native policy retains stdlib log2 for arguments >=256. Comparator results on real data need not be bit-identical across compiler/math-library environments. Near-tie decisions and all resulting maps are preserved, not hidden.",
+  "scope_limit": "Not whole-compressor Brotli output; the maps are serialized with DCC002 Huffman/rANS. Original and DCC002 project source files are not changed."
+}

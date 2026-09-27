@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "test": "scientific_manifest_matches_original_FIX1",
+      "passed": true
+    },
+    {
+      "test": "audit_requires_long_run_opt_in",
+      "passed": true,
+      "message": "STOPPED: audit/full may take hours; repeat with --allow-long-run only when intended."
+    },
+    {
+      "test": "full_requires_long_run_opt_in",
+      "passed": true,
+      "message": "STOPPED: audit/full may take hours; repeat with --allow-long-run only when intended."
+    },
+    {
+      "test": "inputs_requires_data_path",
+      "passed": true,
+      "message": "STOPPED: Provide --study-root or --data-root for corpus inputs"
+    },
+    {
+      "test": "refuses_existing_output",
+      "passed": true,
+      "message": "STOPPED: Output directory already exists; choose a NEW name: /tmp/tmpo1o7t4qi"
+    }
+  ],
+  "windows_MSVC_PowerShell_execution": "NOT_EXECUTED",
+  "benchmark_execution": "NOT_EXECUTED",
+  "notes": [
+    "Wrapper compilation and guards verified on Linux only; Windows/MSVC/PowerShell execution not executed.",
+    "Source integrity: 44 frozen files matched original DCC005_FIX1 package.",
+    "Independent review prompted UTF8 PowerShell capture, ScriptBlock invocation, and ASCII-only native paths."
+  ]
+}

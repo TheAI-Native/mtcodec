@@ -1,0 +1,872 @@
+[
+  {
+    "id": "syn-01",
+    "scope": "synthetic",
+    "group": "synthetic",
+    "file": "00-empty.bin",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 0,
+    "timing_mode": null
+  },
+  {
+    "id": "syn-02",
+    "scope": "synthetic",
+    "group": "synthetic",
+    "file": "01-zero.bin",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 1,
+    "timing_mode": null
+  },
+  {
+    "id": "syn-03",
+    "scope": "synthetic",
+    "group": "synthetic",
+    "file": "02-ff.bin",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 1,
+    "timing_mode": null
+  },
+  {
+    "id": "syn-04",
+    "scope": "synthetic",
+    "group": "synthetic",
+    "file": "03-repeated.bin",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 8192,
+    "timing_mode": null
+  },
+  {
+    "id": "syn-05",
+    "scope": "synthetic",
+    "group": "synthetic",
+    "file": "04-alphabet.bin",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 256,
+    "timing_mode": null
+  },
+  {
+    "id": "syn-06",
+    "scope": "synthetic",
+    "group": "synthetic",
+    "file": "05-cycle.bin",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 8192,
+    "timing_mode": null
+  },
+  {
+    "id": "syn-07",
+    "scope": "synthetic",
+    "group": "synthetic",
+    "file": "06-random.bin",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 8192,
+    "timing_mode": null
+  },
+  {
+    "id": "syn-08",
+    "scope": "synthetic",
+    "group": "synthetic",
+    "file": "07-sparse.bin",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 8192,
+    "timing_mode": null
+  },
+  {
+    "id": "syn-09",
+    "scope": "synthetic",
+    "group": "synthetic",
+    "file": "08-changing.bin",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 16384,
+    "timing_mode": null
+  },
+  {
+    "id": "syn-10",
+    "scope": "synthetic",
+    "group": "synthetic",
+    "file": "09-ties.bin",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 4096,
+    "timing_mode": null
+  },
+  {
+    "id": "whole-01",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "bib",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 111261,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-02",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "book1",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 768771,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-03",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "book2",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 610856,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-04",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "geo",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 102400,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-05",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "news",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 377109,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-06",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "obj1",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 21504,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-07",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "obj2",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 246814,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-08",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "paper1",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 53161,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-09",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "paper2",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 82199,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-10",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "paper3",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 46526,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-11",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "paper4",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 13286,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-12",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "paper5",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 11954,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-13",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "paper6",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 38105,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-14",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "pic",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 513216,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-15",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "progc",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 39611,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-16",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "progl",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 71646,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-17",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "progp",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 49379,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-18",
+    "scope": "whole",
+    "group": "calgary18",
+    "file": "trans",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 93695,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-19",
+    "scope": "whole",
+    "group": "canterbury11",
+    "file": "alice29.txt",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 152089,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-20",
+    "scope": "whole",
+    "group": "canterbury11",
+    "file": "asyoulik.txt",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 125179,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-21",
+    "scope": "whole",
+    "group": "canterbury11",
+    "file": "cp.html",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 24603,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-22",
+    "scope": "whole",
+    "group": "canterbury11",
+    "file": "fields.c",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 11150,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-23",
+    "scope": "whole",
+    "group": "canterbury11",
+    "file": "grammar.lsp",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 3721,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-24",
+    "scope": "whole",
+    "group": "canterbury11",
+    "file": "kennedy.xls",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 1029744,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-25",
+    "scope": "whole",
+    "group": "canterbury11",
+    "file": "lcet10.txt",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 426754,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-26",
+    "scope": "whole",
+    "group": "canterbury11",
+    "file": "plrabn12.txt",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 481861,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-27",
+    "scope": "whole",
+    "group": "canterbury11",
+    "file": "ptt5",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 513216,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-28",
+    "scope": "whole",
+    "group": "canterbury11",
+    "file": "sum",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 38240,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-29",
+    "scope": "whole",
+    "group": "canterbury11",
+    "file": "xargs.1",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 4227,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-30",
+    "scope": "whole",
+    "group": "silesia",
+    "file": "dickens",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 10192446,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-31",
+    "scope": "whole",
+    "group": "silesia",
+    "file": "mozilla",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 51220480,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-32",
+    "scope": "whole",
+    "group": "silesia",
+    "file": "mr",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 9970564,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-33",
+    "scope": "whole",
+    "group": "silesia",
+    "file": "nci",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 33553445,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-34",
+    "scope": "whole",
+    "group": "silesia",
+    "file": "ooffice",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 6152192,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-35",
+    "scope": "whole",
+    "group": "silesia",
+    "file": "osdb",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 10085684,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-36",
+    "scope": "whole",
+    "group": "silesia",
+    "file": "reymont",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 6627202,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-37",
+    "scope": "whole",
+    "group": "silesia",
+    "file": "samba",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 21606400,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-38",
+    "scope": "whole",
+    "group": "silesia",
+    "file": "sao",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 7251944,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-39",
+    "scope": "whole",
+    "group": "silesia",
+    "file": "webster",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 41458703,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-40",
+    "scope": "whole",
+    "group": "silesia",
+    "file": "x-ray",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 8474240,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "whole-41",
+    "scope": "whole",
+    "group": "silesia",
+    "file": "xml",
+    "block_size": 0,
+    "members": 1,
+    "bytes": 5345280,
+    "timing_mode": "symmetric"
+  },
+  {
+    "id": "block-01-016k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "dickens",
+    "block_size": 16384,
+    "members": 20,
+    "bytes": 312894,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-01-064k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "dickens",
+    "block_size": 65536,
+    "members": 20,
+    "bytes": 1279550,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-01-256k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "dickens",
+    "block_size": 262144,
+    "members": 20,
+    "bytes": 5211710,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-02-016k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "mozilla",
+    "block_size": 16384,
+    "members": 20,
+    "bytes": 315392,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-02-064k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "mozilla",
+    "block_size": 65536,
+    "members": 20,
+    "bytes": 1282048,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-02-256k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "mozilla",
+    "block_size": 262144,
+    "members": 20,
+    "bytes": 5083136,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-03-016k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "mr",
+    "block_size": 16384,
+    "members": 20,
+    "bytes": 320388,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-03-064k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "mr",
+    "block_size": 65536,
+    "members": 20,
+    "bytes": 1254276,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-03-256k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "mr",
+    "block_size": 262144,
+    "members": 20,
+    "bytes": 4989828,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-04-016k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "nci",
+    "block_size": 16384,
+    "members": 20,
+    "bytes": 326693,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-04-064k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "nci",
+    "block_size": 65536,
+    "members": 20,
+    "bytes": 1309733,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-04-256k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "nci",
+    "block_size": 262144,
+    "members": 20,
+    "bytes": 5241893,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-05-016k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "ooffice",
+    "block_size": 16384,
+    "members": 20,
+    "bytes": 319488,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-05-064k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "ooffice",
+    "block_size": 65536,
+    "members": 20,
+    "bytes": 1302528,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-05-256k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "ooffice",
+    "block_size": 262144,
+    "members": 20,
+    "bytes": 5103616,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-06-016k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "osdb",
+    "block_size": 16384,
+    "members": 20,
+    "bytes": 320820,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-06-064k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "osdb",
+    "block_size": 65536,
+    "members": 20,
+    "bytes": 1303860,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-06-256k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "osdb",
+    "block_size": 262144,
+    "members": 20,
+    "bytes": 5104948,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-07-016k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "reymont",
+    "block_size": 16384,
+    "members": 20,
+    "bytes": 319362,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-07-064k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "reymont",
+    "block_size": 65536,
+    "members": 20,
+    "bytes": 1253250,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-07-256k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "reymont",
+    "block_size": 262144,
+    "members": 20,
+    "bytes": 5054338,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-08-016k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "samba",
+    "block_size": 16384,
+    "members": 20,
+    "bytes": 323584,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-08-064k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "samba",
+    "block_size": 65536,
+    "members": 20,
+    "bytes": 1290240,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-08-256k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "samba",
+    "block_size": 262144,
+    "members": 20,
+    "bytes": 5091328,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-09-016k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "sao",
+    "block_size": 16384,
+    "members": 20,
+    "bytes": 321512,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-09-064k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "sao",
+    "block_size": 65536,
+    "members": 20,
+    "bytes": 1288168,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-09-256k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "sao",
+    "block_size": 262144,
+    "members": 20,
+    "bytes": 5154792,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-10-016k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "webster",
+    "block_size": 16384,
+    "members": 20,
+    "bytes": 318479,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-10-064k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "webster",
+    "block_size": 65536,
+    "members": 20,
+    "bytes": 1285135,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-10-256k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "webster",
+    "block_size": 262144,
+    "members": 20,
+    "bytes": 5020687,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-11-016k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "x-ray",
+    "block_size": 16384,
+    "members": 20,
+    "bytes": 315008,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-11-064k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "x-ray",
+    "block_size": 65536,
+    "members": 20,
+    "bytes": 1265280,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-11-256k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "x-ray",
+    "block_size": 262144,
+    "members": 20,
+    "bytes": 5066368,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-12-016k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "xml",
+    "block_size": 16384,
+    "members": 20,
+    "bytes": 315392,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-12-064k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "xml",
+    "block_size": 65536,
+    "members": 20,
+    "bytes": 1282048,
+    "timing_mode": "blocks"
+  },
+  {
+    "id": "block-12-256k",
+    "scope": "blocks",
+    "group": "silesia-blocks",
+    "file": "xml",
+    "block_size": 262144,
+    "members": 20,
+    "bytes": 5083136,
+    "timing_mode": "blocks"
+  }
+]

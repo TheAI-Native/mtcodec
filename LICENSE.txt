@@ -1,0 +1,39 @@
+DCC005 LICENSING / NOTICES
+
+New DCC005 orchestration, tests and documentation retain CC0-1.0 terms,
+without warranty, to the extent permitted by law. Third-party MIT notices
+and all earlier-source notices remain in force. This is a mixed-license
+research package, not a claim that every file is public domain.
+
+Retained predecessor notices:
+============================
+DCC004 LICENSING / NOTICES
+
+New DCC004 runner, engine wrappers, memory instrumentation, tests and
+documentation are provided under CC0-1.0, without warranty, to the extent
+permitted by law. Existing upstream terms and notices remain applicable.
+The mixed-source package must not be described as entirely public domain.
+
+Retained earlier-package notice:
+-------------------------------
+DCC003 LICENSING / NOTICES
+
+The supplied Rick Leinecker mtcodec source and DCC002 bridge retain their
+original public-domain / CC0 notices. New DCC003 orchestration, tests and codec
+adapter contributions are provided under CC0-1.0, without warranty, to the extent
+permitted by law. No patent clearance or publication acceptance is implied.
+
+Brotli templates under vendor/brotli-v1.1.0 and Brotli-derived portions of
+source/brotli_support.h are subject to the MIT license and the Brotli Authors'
+copyright. Their license is reproduced in vendor/brotli-v1.1.0/LICENSE and
+must be retained with copies/substantial portions. Do NOT re-label the entire
+mixed-source package as exclusively public domain.
+
+The independent Debian Brotli libraries used to create validation vectors are
+not redistributed here. See protocol/brotli-provenance.json for their exact
+version, hashes and scope. No corpus files are redistributed by DCC003;
+only synthetic fixtures and input manifests are included.
+
+THE SOFTWARE AND EVIDENCE ARE PROVIDED AS IS, WITHOUT WARRANTY. Passing the
+included tests does not prove all-input correctness, security, or fitness for
+publication. Windows execution is pending the user's local validation.

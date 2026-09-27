@@ -1,0 +1,52 @@
+[
+  {
+    "file": "00-empty.bin",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "01-zero.bin",
+    "bytes": 1,
+    "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+  },
+  {
+    "file": "02-ff.bin",
+    "bytes": 1,
+    "sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89"
+  },
+  {
+    "file": "03-repeated.bin",
+    "bytes": 8192,
+    "sha256": "f8ca02c69621dd84cd1212ebfd7d6cdc9ba6ad658854f29567723531912d1a35"
+  },
+  {
+    "file": "04-alphabet.bin",
+    "bytes": 256,
+    "sha256": "40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880"
+  },
+  {
+    "file": "05-cycle.bin",
+    "bytes": 8192,
+    "sha256": "dc404a613fedaeb54034514bc6505f56b933caa5250299ba7d094377a51caa46"
+  },
+  {
+    "file": "06-random.bin",
+    "bytes": 8192,
+    "sha256": "fec7b76db5e42fbce97a96154a1679607d4fc31f6dc0fe40c0df6232d032bf49"
+  },
+  {
+    "file": "07-sparse.bin",
+    "bytes": 8192,
+    "sha256": "2b7b7ab0574ef9cc89355e630045a0a1abe461460ce535b6b8ceda7efa9d0ffe"
+  },
+  {
+    "file": "08-changing.bin",
+    "bytes": 16384,
+    "sha256": "3386930a84a13af7112ae6bc9411abdc047270c416dde1916d86bb899f832c7b"
+  },
+  {
+    "file": "09-ties.bin",
+    "bytes": 4096,
+    "sha256": "1e463d79b914f7f0e73fc43364ec143ab6a337733b90a707c58ca99dfa275b96"
+  }
+]

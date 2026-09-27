@@ -1,0 +1,10 @@
+{
+  "frozen_scientific_files": 44,
+  "git_roundtrip_preserved_all_hashes": true,
+  "public_evidence_export_matches_expected_csvs": true,
+  "publisher_files_checked": 41,
+  "member_ranges_checked": 771,
+  "python_script_syntax": "PASS",
+  "new_windows_wrapper_execution": "NOT_EXECUTED; owner smoke required",
+  "new_compression_benchmark_execution": "NOT_PERFORMED"
+}

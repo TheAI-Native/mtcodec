@@ -1,0 +1,149 @@
+{
+  "package": "DCC005-1.0",
+  "frozen_original_sha256": "3b8a801d0650853e89458c64e08557281845c7ec8a9eb9829cc9e4a44870a14c",
+  "frozen_DCC002_sha256": "d255620ecedecad23e8beb98bb7fe68d5aaa97a08fc21b33da046d4c1b949aa8",
+  "algorithm_scope": "Only two registry entries reuse existing estimated-total selection for other generators; clustering/cost/normalization/serializer/decoder implementations unchanged. New workload/test/runner orchestration is separate.",
+  "changed_or_added": [
+    {
+      "path": "source/dcc004.h",
+      "bytes": 1084,
+      "sha256": "5d58760e4ba874e794197d5631f43922e91f5f357ff2467f43ddf8bfa75389bc",
+      "dcc004_sha256": "fe35e70af5ce1cc35b37299eb0c16f85cfe84110532779b3d80372de717c000f"
+    },
+    {
+      "path": "source/dcc004_engine_impl.h",
+      "bytes": 7163,
+      "sha256": "372813f70c4abac19617a6edd27e26201bfaefb9d9e8af5cb7c68231df342a78",
+      "dcc004_sha256": "ca5254dda277a17853e706569ac8179c2fc4ea4a47aa4ddb117b3c60d5b93b3e"
+    },
+    {
+      "path": "tests/dcc004_run.c",
+      "bytes": 19501,
+      "sha256": "33f6b5f0dfa16d4adb1bc9b1164270def0ef62c5694071bebe6aaf0f978b2be5",
+      "dcc004_sha256": "cd061ebf0f683b520b39788da4a8a686d67f5561cb266039253b52ad547779ca"
+    },
+    {
+      "path": "tests/dcc005_run.c",
+      "bytes": 11993,
+      "sha256": "248f8c6733b1397fba2e0bcb6d1e1d4323a1c89a9f4752172ce07280913b9258",
+      "added": true
+    },
+    {
+      "path": "tests/runner-checks.ps1.inc",
+      "bytes": 14140,
+      "sha256": "64494cb80fddd37e2b0d1436ef0ae3529cc37f63827ab405a6ced82fa72e6024",
+      "added": true
+    }
+  ],
+  "unchanged_predecessor_files": [
+    {
+      "path": "source/brotli_support.h",
+      "bytes": 9137,
+      "sha256": "0f8ac119b91b7ab3b00f27bf3fe93de5bbf120befa8998b1c30ec6d73a091e41",
+      "dcc004_sha256": "0f8ac119b91b7ab3b00f27bf3fe93de5bbf120befa8998b1c30ec6d73a091e41"
+    },
+    {
+      "path": "source/cluster_policy.c",
+      "bytes": 3186,
+      "sha256": "4c16dd128f058c4d5754dc5a03fd42d557b3c97ae5f391294e59b07b6dc02ca2",
+      "dcc004_sha256": "4c16dd128f058c4d5754dc5a03fd42d557b3c97ae5f391294e59b07b6dc02ca2"
+    },
+    {
+      "path": "source/dcc003.h",
+      "bytes": 2022,
+      "sha256": "8a25f490e2f7001a781b4fbc9d464acac78f3414b91a9ca829f432ccce685543",
+      "dcc004_sha256": "8a25f490e2f7001a781b4fbc9d464acac78f3414b91a9ca829f432ccce685543"
+    },
+    {
+      "path": "source/dcc003_codec.c",
+      "bytes": 4404,
+      "sha256": "a4287f2dfe917f985586db77e9f1fdbe0570d18c780c0fcef7bad00a757e0d3a",
+      "dcc004_sha256": "a4287f2dfe917f985586db77e9f1fdbe0570d18c780c0fcef7bad00a757e0d3a"
+    },
+    {
+      "path": "source/dcc004_memory.c",
+      "bytes": 2098,
+      "sha256": "0db7ac1b957419ec7ea72cee6c090657265b05a3fec3ec1883fe2b44108c74d5",
+      "dcc004_sha256": "0db7ac1b957419ec7ea72cee6c090657265b05a3fec3ec1883fe2b44108c74d5"
+    },
+    {
+      "path": "source/dcc004_memory.h",
+      "bytes": 329,
+      "sha256": "f6e4f6d42a462e59ab6fdcbce2d2dfdf67749c3bfdee892bf7c12793dabfbec7",
+      "dcc004_sha256": "f6e4f6d42a462e59ab6fdcbce2d2dfdf67749c3bfdee892bf7c12793dabfbec7"
+    },
+    {
+      "path": "source/dcc004_memory_redirect.h",
+      "bytes": 505,
+      "sha256": "17d27886e6403f72bee327e65b77096b53c00cfc910a34f53e235055ab2ac26e",
+      "dcc004_sha256": "17d27886e6403f72bee327e65b77096b53c00cfc910a34f53e235055ab2ac26e"
+    },
+    {
+      "path": "source/mtcodec_dcc002.c",
+      "bytes": 88724,
+      "sha256": "d255620ecedecad23e8beb98bb7fe68d5aaa97a08fc21b33da046d4c1b949aa8",
+      "dcc004_sha256": "d255620ecedecad23e8beb98bb7fe68d5aaa97a08fc21b33da046d4c1b949aa8"
+    },
+    {
+      "path": "source/mtcodec_original.c",
+      "bytes": 86864,
+      "sha256": "3b8a801d0650853e89458c64e08557281845c7ec8a9eb9829cc9e4a44870a14c",
+      "dcc004_sha256": "3b8a801d0650853e89458c64e08557281845c7ec8a9eb9829cc9e4a44870a14c"
+    },
+    {
+      "path": "tests/dcc003_check.c",
+      "bytes": 12745,
+      "sha256": "0fee2b7d7a188f9066466e78bd2a878be975d02a77b5df5acbdd652eaa5ddade",
+      "dcc004_sha256": "0fee2b7d7a188f9066466e78bd2a878be975d02a77b5df5acbdd652eaa5ddade"
+    },
+    {
+      "path": "tests/dcc_bridge.h",
+      "bytes": 1054,
+      "sha256": "70d7c53ebce52322096a3c566be3d43ed9644906a430319709ffcded957c011e",
+      "dcc004_sha256": "70d7c53ebce52322096a3c566be3d43ed9644906a430319709ffcded957c011e"
+    },
+    {
+      "path": "tests/dcc_bridge_impl.h",
+      "bytes": 3991,
+      "sha256": "0c143829b379569494185197bba83fc81a5d11cd78902f04baf645203fd3d000",
+      "dcc004_sha256": "0c143829b379569494185197bba83fc81a5d11cd78902f04baf645203fd3d000"
+    },
+    {
+      "path": "tests/dcc_original_bridge.c",
+      "bytes": 157,
+      "sha256": "974264c5c37f9b9ca5b7db1fb91d1e3fcd6d08b4c36d0339425ba5dd73c57f43",
+      "dcc004_sha256": "974264c5c37f9b9ca5b7db1fb91d1e3fcd6d08b4c36d0339425ba5dd73c57f43"
+    },
+    {
+      "path": "tests/oracle_pools.h",
+      "bytes": 1668,
+      "sha256": "2b600e87583d9e34304ae54872269b4d5f8f72bad8e9ed9c70f89b7f52f8c9f3",
+      "dcc004_sha256": "2b600e87583d9e34304ae54872269b4d5f8f72bad8e9ed9c70f89b7f52f8c9f3"
+    },
+    {
+      "path": "vendor/brotli-v1.1.0/LICENSE",
+      "bytes": 1082,
+      "sha256": "ee828c7c12f822dba3b16596d609920fe7c449d179e645bcf1e75cf0927f14bf",
+      "dcc004_sha256": "ee828c7c12f822dba3b16596d609920fe7c449d179e645bcf1e75cf0927f14bf"
+    },
+    {
+      "path": "vendor/brotli-v1.1.0/bit_cost_inc.h",
+      "bytes": 4105,
+      "sha256": "ae2e670d664dc13a75a3a7dad28e6cf372918de57d6e3f3f269480d0522adb1d",
+      "dcc004_sha256": "ae2e670d664dc13a75a3a7dad28e6cf372918de57d6e3f3f269480d0522adb1d"
+    },
+    {
+      "path": "vendor/brotli-v1.1.0/cluster_inc.h",
+      "bytes": 11809,
+      "sha256": "d6af6744dcdb7110e214289edb5c7418a29b4393a5b92cd0f94cc73e9cf6e2d5",
+      "dcc004_sha256": "d6af6744dcdb7110e214289edb5c7418a29b4393a5b92cd0f94cc73e9cf6e2d5"
+    },
+    {
+      "path": "vendor/brotli-v1.1.0/histogram_inc.h",
+      "bytes": 1399,
+      "sha256": "9399d7252566bce150ebe38e3c4fcc79e2d1b7e79e3fa09748c9ae60972751a8",
+      "dcc004_sha256": "9399d7252566bce150ebe38e3c4fcc79e2d1b7e79e3fa09748c9ae60972751a8"
+    }
+  ],
+  "upstream_limit": "Retains the DCC003/004 vendor transcription-provenance qualification; no fresh download or new upstream-byte authentication is claimed."
+}

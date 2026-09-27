@@ -1,0 +1,13 @@
+{
+  "original_archive": "DCC005-results-20260926-112604-bdea7596.zip",
+  "original_archive_sha256": "5f7bc4e0d38ebc6c32faf9b0896f12ceebf6ab515f83ce558c1087c94b054f5f",
+  "public_evidence_archive": "DCC005-public-evidence-20260926-112604-bdea7596.zip",
+  "public_evidence_sha256": "fec1221aded4ab4b566e32cce5c49b16f05cd29b279f14ee4a5a0e8c82d6f4c5",
+  "run_id": "20260926-112604-bdea7596",
+  "frozen_files": 44,
+  "original_files": 5192,
+  "copied_exact": 4462,
+  "redacted": 708,
+  "omitted_build_products": 22,
+  "publication_status": "LOCAL_PREPARATION_ONLY; Windows public-wrapper validation and owner publication pending"
+}

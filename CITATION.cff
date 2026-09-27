@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the specific archived release used in your research."
+type: software
+title: "mtcodec: Reproduction package for Compression and Encoding Cost in Context Clustered Huffman and rANS Coding"
+authors:
+  - family-names: "Leinecker"
+    given-names: "Richard"
+    affiliation: "University of Central Florida"
+# Prepared metadata. Actual release URL, DOI, version and date are added by
+# scripts/Set-Publication-Metadata.py after the owner reserves a real DOI.

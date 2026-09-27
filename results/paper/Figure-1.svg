@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="550" viewBox="0 0 900 550" role="img" aria-labelledby="title desc">
+<title id="title">Estimated-selection rANS: reassignment versus native merging</title>
+<desc id="desc">Thirty-six Silesia file and block-size groups. Positive rate differences mean larger reassignment output. Both methods use estimated selection.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="serif" font-size="18" fill="#222">
+<line x1="90.0" y1="35" x2="90.0" y2="465" stroke="#ddd"/>
+<text x="90.0" y="492" text-anchor="middle">0</text>
+<line x1="245.0" y1="35" x2="245.0" y2="465" stroke="#ddd"/>
+<text x="245.0" y="492" text-anchor="middle">5</text>
+<line x1="400.0" y1="35" x2="400.0" y2="465" stroke="#ddd"/>
+<text x="400.0" y="492" text-anchor="middle">10</text>
+<line x1="555.0" y1="35" x2="555.0" y2="465" stroke="#ddd"/>
+<text x="555.0" y="492" text-anchor="middle">15</text>
+<line x1="710.0" y1="35" x2="710.0" y2="465" stroke="#ddd"/>
+<text x="710.0" y="492" text-anchor="middle">20</text>
+<line x1="865.0" y1="35" x2="865.0" y2="465" stroke="#ddd"/>
+<text x="865.0" y="492" text-anchor="middle">25</text>
+<line x1="90" y1="465.0" x2="865" y2="465.0" stroke="#ddd"/>
+<text x="75" y="471.0" text-anchor="end">-1</text>
+<line x1="90" y1="393.33333333333337" x2="865" y2="393.33333333333337" stroke="#777"/>
+<text x="75" y="399.33333333333337" text-anchor="end">0</text>
+<line x1="90" y1="321.66666666666663" x2="865" y2="321.66666666666663" stroke="#ddd"/>
+<text x="75" y="327.66666666666663" text-anchor="end">1</text>
+<line x1="90" y1="250.0" x2="865" y2="250.0" stroke="#ddd"/>
+<text x="75" y="256.0" text-anchor="end">2</text>
+<line x1="90" y1="178.33333333333331" x2="865" y2="178.33333333333331" stroke="#ddd"/>
+<text x="75" y="184.33333333333331" text-anchor="end">3</text>
+<line x1="90" y1="106.66666666666666" x2="865" y2="106.66666666666666" stroke="#ddd"/>
+<text x="75" y="112.66666666666666" text-anchor="end">4</text>
+<line x1="90" y1="35.0" x2="865" y2="35.0" stroke="#ddd"/>
+<text x="75" y="41.0" text-anchor="end">5</text>
+<line x1="90" y1="35" x2="90" y2="465" stroke="#222"/>
+<line x1="90" y1="465" x2="865" y2="465" stroke="#222"/>
+<text x="477.5" y="520" text-anchor="middle">Reassignment / native encoding speed</text>
+<text transform="translate(26,250.0) rotate(-90)" text-anchor="middle">Mean rate difference (%)</text>
+<circle cx="654.585" cy="300.542" r="6" fill="#333333" stroke="white"><title>dickens, 16 KiB: speedup 18.2124333, rate difference 1.2947632%</title></circle>
+<rect x="515.220" y="377.316" width="12" height="12" fill="#27658C" stroke="white"><title>dickens, 64 KiB: speedup 13.9103068, rate difference 0.139779226%</title></rect>
+<polygon points="358.064,381.788 351.064,394.788 365.064,394.788" fill="#AF5A14" stroke="white"><title>dickens, 256 KiB: speedup 8.64722367, rate difference 0.0634187472%</title></polygon>
+<circle cx="751.663" cy="88.048" r="6" fill="#333333" stroke="white"><title>mozilla, 16 KiB: speedup 21.3439747, rate difference 4.25980176%</title></circle>
+<rect x="493.368" y="178.023" width="12" height="12" fill="#27658C" stroke="white"><title>mozilla, 64 KiB: speedup 13.205427, rate difference 2.92060236%</title></rect>
+<polygon points="357.878,275.217 350.878,288.217 364.878,288.217" fill="#AF5A14" stroke="white"><title>mozilla, 256 KiB: speedup 8.64122208, rate difference 1.55045692%</title></polygon>
+<circle cx="377.115" cy="392.808" r="6" fill="#333333" stroke="white"><title>mr, 16 KiB: speedup 9.26175958, rate difference 0.00733088025%</title></circle>
+<rect x="381.428" y="390.882" width="12" height="12" fill="#27658C" stroke="white"><title>mr, 64 KiB: speedup 9.59446298, rate difference -0.0495208129%</title></rect>
+<polygon points="398.102,424.009 391.102,437.009 405.102,437.009" fill="#AF5A14" stroke="white"><title>mr, 256 KiB: speedup 9.93878172, rate difference -0.525701103%</title></polygon>
+<circle cx="539.976" cy="324.548" r="6" fill="#333333" stroke="white"><title>nci, 16 KiB: speedup 14.5153571, rate difference 0.959802205%</title></circle>
+<rect x="417.858" y="331.640" width="12" height="12" fill="#27658C" stroke="white"><title>nci, 64 KiB: speedup 10.7696201, rate difference 0.777118856%</title></rect>
+<polygon points="278.109,360.110 271.109,373.110 285.109,373.110" fill="#AF5A14" stroke="white"><title>nci, 256 KiB: speedup 6.06804064, rate difference 0.36590875%</title></polygon>
+<circle cx="799.207" cy="137.688" r="6" fill="#333333" stroke="white"><title>ooffice, 16 KiB: speedup 22.8776467, rate difference 3.56714322%</title></circle>
+<rect x="534.747" y="224.243" width="12" height="12" fill="#27658C" stroke="white"><title>ooffice, 64 KiB: speedup 14.5402145, rate difference 2.27568524%</title></rect>
+<polygon points="385.466,293.610 378.466,306.610 392.466,306.610" fill="#AF5A14" stroke="white"><title>ooffice, 256 KiB: speedup 9.5311748, rate difference 1.29380881%</title></polygon>
+<circle cx="650.840" cy="297.074" r="6" fill="#333333" stroke="white"><title>osdb, 16 KiB: speedup 18.0916137, rate difference 1.34314979%</title></circle>
+<rect x="508.722" y="289.833" width="12" height="12" fill="#27658C" stroke="white"><title>osdb, 64 KiB: speedup 13.7007196, rate difference 1.36046773%</title></rect>
+<polygon points="492.399,303.088 485.399,316.088 499.399,316.088" fill="#AF5A14" stroke="white"><title>osdb, 256 KiB: speedup 12.9806007, rate difference 1.16155724%</title></polygon>
+<circle cx="631.271" cy="282.335" r="6" fill="#333333" stroke="white"><title>reymont, 16 KiB: speedup 17.4603681, rate difference 1.54881639%</title></circle>
+<rect x="548.273" y="316.957" width="12" height="12" fill="#27658C" stroke="white"><title>reymont, 64 KiB: speedup 14.9765619, rate difference 0.981996172%</title></rect>
+<polygon points="404.243,352.329 397.243,365.329 411.243,365.329" fill="#AF5A14" stroke="white"><title>reymont, 256 KiB: speedup 10.1368715, rate difference 0.474476297%</title></polygon>
+<circle cx="716.198" cy="230.948" r="6" fill="#333333" stroke="white"><title>samba, 16 KiB: speedup 20.1999476, rate difference 2.26584749%</title></circle>
+<rect x="418.954" y="345.985" width="12" height="12" fill="#27658C" stroke="white"><title>samba, 64 KiB: speedup 10.8049624, rate difference 0.5769478%</title></rect>
+<polygon points="277.760,362.636 270.760,375.636 284.760,375.636" fill="#AF5A14" stroke="white"><title>samba, 256 KiB: speedup 6.05677254, rate difference 0.330661772%</title></polygon>
+<circle cx="780.336" cy="232.737" r="6" fill="#333333" stroke="white"><title>sao, 16 KiB: speedup 22.2688986, rate difference 2.24087663%</title></circle>
+<rect x="390.227" y="248.272" width="12" height="12" fill="#27658C" stroke="white"><title>sao, 64 KiB: speedup 9.87827956, rate difference 1.94039325%</title></rect>
+<polygon points="236.035,311.859 229.035,324.859 243.035,324.859" fill="#AF5A14" stroke="white"><title>sao, 256 KiB: speedup 4.71079392, rate difference 1.03917004%</title></polygon>
+<circle cx="620.174" cy="173.175" r="6" fill="#333333" stroke="white"><title>webster, 16 KiB: speedup 17.102388, rate difference 3.07197783%</title></circle>
+<rect x="503.319" y="318.769" width="12" height="12" fill="#27658C" stroke="white"><title>webster, 64 KiB: speedup 13.5264043, rate difference 0.956715751%</title></rect>
+<polygon points="382.966,372.181 375.966,385.181 389.966,385.181" fill="#AF5A14" stroke="white"><title>webster, 256 KiB: speedup 9.4505175, rate difference 0.197468208%</title></polygon>
+<circle cx="367.653" cy="334.807" r="6" fill="#333333" stroke="white"><title>x-ray, 16 KiB: speedup 8.95653861, rate difference 0.816652149%</title></circle>
+<rect x="351.230" y="374.037" width="12" height="12" fill="#27658C" stroke="white"><title>x-ray, 64 KiB: speedup 8.62031544, rate difference 0.185524365%</title></rect>
+<polygon points="361.782,400.972 354.782,413.972 368.782,413.972" fill="#AF5A14" stroke="white"><title>x-ray, 256 KiB: speedup 8.76716252, rate difference -0.20426571%</title></polygon>
+<circle cx="657.789" cy="182.014" r="6" fill="#333333" stroke="white"><title>xml, 16 KiB: speedup 18.3157742, rate difference 2.9486384%</title></circle>
+<rect x="527.788" y="334.982" width="12" height="12" fill="#27658C" stroke="white"><title>xml, 64 KiB: speedup 14.3157571, rate difference 0.730487227%</title></rect>
+<polygon points="383.037,370.104 376.037,383.104 390.037,383.104" fill="#AF5A14" stroke="white"><title>xml, 256 KiB: speedup 9.4528077, rate difference 0.226456142%</title></polygon>
+<circle cx="114.000" cy="60.000" r="6" fill="#333333" stroke="white"></circle>
+<text x="132" y="66">16 KiB</text>
+<rect x="108.000" y="83.000" width="12" height="12" fill="#27658C" stroke="white"></rect>
+<text x="132" y="95">64 KiB</text>
+<polygon points="114.000,111.000 107.000,124.000 121.000,124.000" fill="#AF5A14" stroke="white"></polygon>
+<text x="132" y="124">256 KiB</text>
+</g></svg>
