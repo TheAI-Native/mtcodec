@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "phase": "smoke",
+  "started_utc": "2026-09-27T16:42:32.554389+00:00",
+  "completed_utc": "2026-09-27T16:42:44.179675+00:00",
+  "execution_platform": "win32",
+  "wrapper_sha256": "f094d62f8c189564d04aac4b4a426f0fbd71e425b7486ebbea186059ea7ae3ea",
+  "unit_checks": 52,
+  "native_oracle_checks": 144,
+  "expected_failure_controls": 5
+}

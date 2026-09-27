@@ -1,0 +1,8 @@
+{
+  "title": "mtcodec: Reproduction package for Compression and Encoding Cost in Context Clustered Huffman and rANS Coding",
+  "author": "Richard Leinecker",
+  "version": "v1.0.0-dcc-submission",
+  "repository_url": "https://github.com/TheAI-Native/mtcodec",
+  "doi": "10.5281/zenodo.23001172",
+  "date_released": "2026-09-27"
+}

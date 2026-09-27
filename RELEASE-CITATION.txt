@@ -1,0 +1,1 @@
+R. Leinecker, "mtcodec: Reproduction package for Compression and Encoding Cost in Context Clustered Huffman and rANS Coding," version v1.0.0-dcc-submission, Zenodo, 2026. https://doi.org/10.5281/zenodo.23001172
